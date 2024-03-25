@@ -1,0 +1,164 @@
+[debug] [2024-03-25T21:20:34.365Z] ----------------------------------------------------------------------
+[debug] [2024-03-25T21:20:34.367Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2024-03-25T21:20:34.367Z] CLI Version:   13.0.3
+[debug] [2024-03-25T21:20:34.367Z] Platform:      win32
+[debug] [2024-03-25T21:20:34.367Z] Node Version:  v20.11.0
+[debug] [2024-03-25T21:20:34.367Z] Time:          Mon Mar 25 2024 16:20:34 GMT-0500 (Central Daylight Time)
+[debug] [2024-03-25T21:20:34.367Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-25T21:20:34.423Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-25T21:20:34.423Z] > authorizing via signed-in user (youssef15015@rapcorp.us)
+[debug] [2024-03-25T21:20:34.423Z] [iam] checking project rapeddataa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-25T21:20:34.425Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions [none]
+[debug] [2024-03-25T21:20:34.425Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions x-goog-quota-user=projects/rapeddataa
+[debug] [2024-03-25T21:20:34.425Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T21:20:34.986Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions 200
+[debug] [2024-03-25T21:20:34.986Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T21:20:34.987Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa [none]
+[debug] [2024-03-25T21:20:35.535Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa 200
+[debug] [2024-03-25T21:20:35.535Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa {"projectId":"rapeddataa","projectNumber":"672642702613","displayName":"RAPEdDataA","name":"projects/rapeddataa","resources":{"hostingSite":"rapeddataa","realtimeDatabaseInstance":"rapeddataa-default-rtdb"},"state":"ACTIVE","etag":"1_6973f742-539c-4464-bdc4-cdb690028032"}
+[info] 
+[info] === Deploying to 'rapeddataa'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-03-25T21:20:35.538Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions [none]
+[debug] [2024-03-25T21:20:35.538Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-03-25T21:20:36.628Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions 200
+[debug] [2024-03-25T21:20:36.628Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions {"name":"projects/672642702613/sites/rapeddataa/versions/a27e1cf40b550bb6","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[rapeddataa]: beginning deploy... 
+[debug] [2024-03-25T21:20:36.637Z] Error: EPERM: operation not permitted, scandir 'C:\Users\19739\AppData\Local\RAPEdDataA\public\firebase-debug.log'
+    at Object.readdirSync (node:fs:1515:26)
+    at GlobSync._readdir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-25T21:20:39.948Z] ----------------------------------------------------------------------
+[debug] [2024-03-25T21:20:39.949Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2024-03-25T21:20:39.950Z] CLI Version:   13.0.3
+[debug] [2024-03-25T21:20:39.950Z] Platform:      win32
+[debug] [2024-03-25T21:20:39.950Z] Node Version:  v20.11.0
+[debug] [2024-03-25T21:20:39.950Z] Time:          Mon Mar 25 2024 16:20:39 GMT-0500 (Central Daylight Time)
+[debug] [2024-03-25T21:20:39.950Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-25T21:20:40.005Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-25T21:20:40.006Z] > authorizing via signed-in user (youssef15015@rapcorp.us)
+[debug] [2024-03-25T21:20:40.006Z] [iam] checking project rapeddataa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-25T21:20:40.008Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions [none]
+[debug] [2024-03-25T21:20:40.008Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions x-goog-quota-user=projects/rapeddataa
+[debug] [2024-03-25T21:20:40.008Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T21:20:40.562Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions 200
+[debug] [2024-03-25T21:20:40.562Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T21:20:40.563Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa [none]
+[debug] [2024-03-25T21:20:41.057Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa 200
+[debug] [2024-03-25T21:20:41.058Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa {"projectId":"rapeddataa","projectNumber":"672642702613","displayName":"RAPEdDataA","name":"projects/rapeddataa","resources":{"hostingSite":"rapeddataa","realtimeDatabaseInstance":"rapeddataa-default-rtdb"},"state":"ACTIVE","etag":"1_6973f742-539c-4464-bdc4-cdb690028032"}
+[info] 
+[info] === Deploying to 'rapeddataa'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-03-25T21:20:41.061Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions [none]
+[debug] [2024-03-25T21:20:41.061Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-03-25T21:20:41.887Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions 200
+[debug] [2024-03-25T21:20:41.887Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions {"name":"projects/672642702613/sites/rapeddataa/versions/dff8f447ae14eb4b","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[rapeddataa]: beginning deploy... 
+[debug] [2024-03-25T21:20:41.895Z] Error: EPERM: operation not permitted, scandir 'C:\Users\19739\AppData\Local\RAPEdDataA\public\firebase-debug.log'
+    at Object.readdirSync (node:fs:1515:26)
+    at GlobSync._readdir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-25T21:20:44.750Z] ----------------------------------------------------------------------
+[debug] [2024-03-25T21:20:44.751Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2024-03-25T21:20:44.752Z] CLI Version:   13.0.3
+[debug] [2024-03-25T21:20:44.752Z] Platform:      win32
+[debug] [2024-03-25T21:20:44.752Z] Node Version:  v20.11.0
+[debug] [2024-03-25T21:20:44.752Z] Time:          Mon Mar 25 2024 16:20:44 GMT-0500 (Central Daylight Time)
+[debug] [2024-03-25T21:20:44.752Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-25T21:20:44.807Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-25T21:20:44.808Z] > authorizing via signed-in user (youssef15015@rapcorp.us)
+[debug] [2024-03-25T21:20:44.808Z] [iam] checking project rapeddataa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-25T21:20:44.809Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions [none]
+[debug] [2024-03-25T21:20:44.810Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions x-goog-quota-user=projects/rapeddataa
+[debug] [2024-03-25T21:20:44.810Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T21:20:45.404Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions 200
+[debug] [2024-03-25T21:20:45.404Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T21:20:45.405Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa [none]
+[debug] [2024-03-25T21:20:45.846Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa 200
+[debug] [2024-03-25T21:20:45.846Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa {"projectId":"rapeddataa","projectNumber":"672642702613","displayName":"RAPEdDataA","name":"projects/rapeddataa","resources":{"hostingSite":"rapeddataa","realtimeDatabaseInstance":"rapeddataa-default-rtdb"},"state":"ACTIVE","etag":"1_6973f742-539c-4464-bdc4-cdb690028032"}
+[info] 
+[info] === Deploying to 'rapeddataa'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-03-25T21:20:45.849Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions [none]
+[debug] [2024-03-25T21:20:45.849Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-03-25T21:20:46.601Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions 200
+[debug] [2024-03-25T21:20:46.601Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions {"name":"projects/672642702613/sites/rapeddataa/versions/64bc19bce180b73c","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[rapeddataa]: beginning deploy... 
+[debug] [2024-03-25T21:20:46.609Z] Error: EPERM: operation not permitted, scandir 'C:\Users\19739\AppData\Local\RAPEdDataA\public\firebase-debug.log'
+    at Object.readdirSync (node:fs:1515:26)
+    at GlobSync._readdir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-25T21:21:23.933Z] ----------------------------------------------------------------------
+[debug] [2024-03-25T21:21:23.934Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2024-03-25T21:21:23.935Z] CLI Version:   13.0.3
+[debug] [2024-03-25T21:21:23.935Z] Platform:      win32
+[debug] [2024-03-25T21:21:23.935Z] Node Version:  v20.11.0
+[debug] [2024-03-25T21:21:23.935Z] Time:          Mon Mar 25 2024 16:21:23 GMT-0500 (Central Daylight Time)
+[debug] [2024-03-25T21:21:23.935Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-25T21:21:23.996Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-25T21:21:23.996Z] > authorizing via signed-in user (youssef15015@rapcorp.us)
+[debug] [2024-03-25T21:21:23.996Z] [iam] checking project rapeddataa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-25T21:21:23.998Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions [none]
+[debug] [2024-03-25T21:21:23.999Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions x-goog-quota-user=projects/rapeddataa
+[debug] [2024-03-25T21:21:23.999Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T21:21:24.577Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions 200
+[debug] [2024-03-25T21:21:24.577Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rapeddataa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T21:21:24.578Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa [none]
+[debug] [2024-03-25T21:21:25.085Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa 200
+[debug] [2024-03-25T21:21:25.085Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rapeddataa {"projectId":"rapeddataa","projectNumber":"672642702613","displayName":"RAPEdDataA","name":"projects/rapeddataa","resources":{"hostingSite":"rapeddataa","realtimeDatabaseInstance":"rapeddataa-default-rtdb"},"state":"ACTIVE","etag":"1_6973f742-539c-4464-bdc4-cdb690028032"}
+[info] 
+[info] === Deploying to 'rapeddataa'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-03-25T21:21:25.089Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions [none]
+[debug] [2024-03-25T21:21:25.089Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-03-25T21:21:25.905Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions 200
+[debug] [2024-03-25T21:21:25.906Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/rapeddataa/versions {"name":"projects/672642702613/sites/rapeddataa/versions/c9669fbc0c793af1","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[rapeddataa]: beginning deploy... 
+[debug] [2024-03-25T21:21:25.913Z] Error: EPERM: operation not permitted, scandir 'C:\Users\19739\AppData\Local\RAPEdDataA\public\firebase-debug.log'
+    at Object.readdirSync (node:fs:1515:26)
+    at GlobSync._readdir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\19739\Documents\GitHub\square-nodejs-sdk\node_modules\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,0 +1,22 @@
+body { background: #d8fffcc2; color: #ffffffde; font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+#screen { background: rgb(69, 69, 69); width:60vw; height:60vw;min-height:200px; max-height:500px; margin: 20%; margin-top:2.5%; padding:0; border-radius: 3px; }
+/* #screen h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; } */
+body h2 { text-shadow: rgb(226, 192, 0) 3px 3px 10px; text-align:center; color: #000000; font-weight: 700; font-size: 25px; margin: 0 0 8px; }
+body h1 { text-align:center; font-size:50px; font-weight: 300; color: rgb(0, 0, 0); margin: 0 0 16px; background-color: bisque; border-radius: 2.5px;min-width:100%; width:110vw;}
+/* #screen p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; } */
+#button-panel-1  { height:60vw; max-height:600px; text-align:center; display:flex; position: absolute; flex-direction: column; justify-content: center; align-items: center; left:0; width: 15%;margin-left:2.5%;}
+#button-panel-1 a {cursor: pointer; font-size:1.75vw; font-weight:700; width:100%; vertical-align:middle; background:#039be5; text-transform:uppercase; text-decoration:none; color:white; padding:10%; margin-top:10%; margin-bottom:10%; border-radius:4px; }
+#screen, #screen a { box-shadow: 0 1px 3px rgba(255, 255, 255, 0.968), 0 1px 2px rgb(242, 242, 242); }
+/* #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; } */
+
+@media (max-width: 600px) {
+  body, #message { margin-top: 0; box-shadow: none;}
+  body h1 {width:100vw}
+  #screen {margin:0; width:calc(100vw - 8px); height:450px; margin-top:2.5%; border: solid 4px white;}
+  #button-panel-1  {height: 100px; position:relative; flex-direction:row; justify-content:center; align-items:center; top:0; left:default; width: 50%;margin-left:25%;}
+  #button-panel-1 a { font-weight:700; margin-left:5%; vertical-align:middle; background:#039be5; text-transform:uppercase; text-decoration:none; color:white; padding:10%; margin-top:2.5%; border-radius:4px; }
+}
+
+@media (min-width: 1000px) {
+  #button-panel-1 a {font-size:15px;}
+}
